@@ -8,7 +8,7 @@ var emailUtente = prompt("Inserisci la tua e-mail");
 var i;
 var answer = 0;
 
-for(i = 0; i <= 3; i++) {
+for(i = 0; i < listaMail.length; i++) {
   if(emailUtente == listaMail[i]) {
     answer = 1;
     i = 3;
