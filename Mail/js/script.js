@@ -13,7 +13,6 @@ function myFunction(){
   for(i = 0; i < listaMail.length; i++) {
     if(emailUtente == listaMail[i]) {
       answer = 1;
-      i = 3;
     }
   }
 
