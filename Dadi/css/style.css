@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #0E171C;
+}
+
+h1{
+  color: white;
+  margin-bottom: 30px;
+}
+
+.box{
+  margin-top: 20px;
+  height: 20vh;
+  background: grey;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  margin-left: 15px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#answer{
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .right{
+    margin-left: 0px;
+  }
+
+  .box{
+    width: 50%;
+    margin: 20px auto;
+  }
+
+}

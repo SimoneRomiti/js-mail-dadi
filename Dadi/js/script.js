@@ -10,15 +10,29 @@ function myFunction(){
   numeroUtente = Math.floor(Math.random() * 6 + 1);
   numeroPC = Math.floor(Math.random() * 6 + 1);
 
+  document.getElementById("giocatore").innerHTML = "Numero Giocatore <br>" + numeroUtente;
+
+  document.getElementById("pc").innerHTML = "Numero PC <br>" + numeroPC;
+
+
   console.log(numeroUtente);
   console.log(numeroPC);
 
   if(numeroUtente > numeroPC) {
-    alert("Congratulazioni " + nomeUtente + " Hai vinto!");
+
+    document.getElementById("answer").style.color = "green";
+    document.getElementById("answer").innerHTML = "Congratulazioni " + nomeUtente + " Hai vinto!";
+
   } else if(numeroUtente < numeroPC) {
-    alert("Che peccato " + nomeUtente + " Hai perso!");
+
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").innerHTML ="Che peccato " + nomeUtente + " Hai perso!";
+
   } else {
-    alert(nomeUtente + " la sfida è terminata con un pareggio!");
+
+    document.getElementById("answer").style.color = "white";
+    document.getElementById("answer").innerHTML = nomeUtente + " la sfida è terminata con un pareggio!";
+
   }
-  
+
 }
